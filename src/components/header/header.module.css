@@ -1,0 +1,31 @@
+.header {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 4px solid rgb(144, 144, 144);
+    background-color: rgb(227, 225, 225);
+    position: relative;
+}
+.rightBtns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.btn{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 21px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: darkblue;
+}

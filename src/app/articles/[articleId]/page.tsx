@@ -4,10 +4,13 @@
 import { Article } from "@/utils/types";
 
 interface SingleArticlePageProps {
+  // paramas is a dynamic part of the URL, it's what comes after the colon in the route
+  // params token from props (props.params), and it is opject type and has a daynamic id
+  // id var should be called articleId because it token from name of folder [articleId] in the router.ts
   params: { articleId: string };
 }
 const SingleArticlePage = async ({ params }: SingleArticlePageProps) => {
-  console.log("articleId:", params.articleId);
+  // console.log("articleId:", params.articleId);
   const response = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.articleId}`
   );
